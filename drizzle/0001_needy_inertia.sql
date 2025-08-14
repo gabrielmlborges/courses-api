@@ -1,0 +1,1 @@
+ALTER TABLE "courses" ALTER COLUMN "title" SET NOT NULL;

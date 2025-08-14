@@ -1,0 +1,27 @@
+{
+  "name": "pone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --env-file .env --watch --experimental-strip-types server.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "drizzle-orm": "^0.44.4",
+    "fastify": "^5.5.0",
+    "fastify-type-provider-zod": "^5.0.3",
+    "pg": "^8.16.3",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "drizzle-kit": "^0.31.4",
+    "typescript": "^5.9.2"
+  }
+}
