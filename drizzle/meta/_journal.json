@@ -15,6 +15,20 @@
       "when": 1755112743530,
       "tag": "0001_needy_inertia",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755200270939,
+      "tag": "0002_panoramic_iron_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1755806453478,
+      "tag": "0003_certain_winter_soldier",
+      "breakpoints": true
     }
   ]
 }
