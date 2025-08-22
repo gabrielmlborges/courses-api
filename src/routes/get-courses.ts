@@ -8,11 +8,11 @@ import { checkRequestJWT } from './hooks/check-request-jwt.ts'
 
 export const getCoursesRoute: FastifyPluginAsyncZod = async (server) => {
   server.get('/courses', {
+    preHandler: [
+      checkRequestJWT,
+      checkUserRole('manager'),
+    ],
     schema: {
-      preHandler: [
-        checkRequestJWT,
-        checkUserRole('manager'),
-      ],
       tags: ['courses'],
       summary: 'Get all courses',
       querystring: z.object({
